@@ -31,11 +31,9 @@
                 if ($_SESSION['vote_status']=='') {
               ?>
                 <?php if ($_SESSION['sess_status']==1) { ?>
-                  <form action="vote.php" method="post">
                     <div class="col-12 text-center mt-4">
-                      <a href="vote.php?elec_id=<?php echo $row['elec_id']; ?>"><button class="btn btn-success" type="submit">vote</button></a>
+                      <a href="vote.php?id=<?php echo $row['elec_id']; ?>"><button class="btn btn-success" type="button">vote</button></a>
                     </div>
-                  </form>
                   <?php }else if($_SESSION['sess_status']==2){?>
                   <form action="vote.php" method="post">
                   <div class="col-12 text-center mt-4">
